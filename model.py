@@ -1,3 +1,5 @@
+
+
 import random
 
 
@@ -6,6 +8,7 @@ class CacheLine:
     def __init__(self, tag):
         self.tag = tag
         self.state = 'I'  # Initial state: Invalid
+
 
 
 class CacheSet:
@@ -99,6 +102,8 @@ for _ in range(20):
     else:
         cache_hit = cache_model.write(processor_id, address)
     print(f"Processor {processor_id} performed a {'read' if operation == 'read' else 'write'} operation at address {address}. Cache hit: {cache_hit}")
+
+
 
 # Output cache contents
 print("\nCache Contents:")
